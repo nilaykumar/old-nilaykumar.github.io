@@ -9,6 +9,7 @@
 
     
 <link rel="stylesheet" type="text/css" href="../static/css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="../static/css/posts.css">
 
     <script>
       MathJax = {
@@ -44,27 +45,27 @@
     <div id="content">
       
 <h1>The twisted Eilenberg-Zilber theorem</h1>
-<p>Recently I was curious about the origins and initial applications of the homological perturbation lemma (more on that below). As it turned out, it’s a beautiful story involving the homology of simplicial fibrations that I had never heard of (due to <span class="citation" data-cites="shih">(Shih 1962)</span> and <span class="citation" data-cites="brown">(Brown 1959)</span>). In this brief note I want to sketch the ideas at play.</p>
+<p>Recently I was curious about the origins and initial applications of the homological perturbation lemma (more on that below). As it turned out, it’s a beautiful story involving the homology of simplicial fibrations that I had never heard of (due to <span class="citation" data-cites="shih">[1]</span> and <span class="citation" data-cites="brown">[2]</span>). In this brief note I want to sketch the ideas at play.</p>
 <p>For spaces <span class="math inline">\(B\)</span> and <span class="math inline">\(F\)</span>, the Eilenberg-Zilber theorem constucts chain equivalences <span class="math display">\[\begin{xy}
     \xymatrix{
       C_*(B\times F) \ar@(ur, ul)[r]^{} &amp; C_*(B) \otimes C_*(F) \ar@(dl, dr)[l]^{}
     }
-  \end{xy}\]</span> computing the singular chains of the trivial bundle <span class="math inline">\(B \times F\)</span> as a tensor product of the chains on <span class="math inline">\(B\)</span> and the chains on <span class="math inline">\(F\)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The twisted Eilenberg-Zilber theorem is the generalization to an arbitrary bundle <span class="math inline">\(E=B \times F\)</span>. We will work in the setting of simplicial sets instead of topological spaces. In this setting, the combinatorics of simplicial sets conspire to make Kan fibrations amenable to straightforward calculation. The key idea, due to <span class="citation" data-cites="BGM">(<strong>BGM?</strong>)</span>, is that of a minimal Kan fibration. We will not worry about the definition of minimality, but the following two results are important:</p>
+  \end{xy}\]</span> computing the singular chains of the trivial bundle <span class="math inline">\(B \times F\)</span> as a tensor product of the chains on <span class="math inline">\(B\)</span> and the chains on <span class="math inline">\(F\)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The twisted Eilenberg-Zilber theorem is the generalization to an arbitrary bundle <span class="math inline">\(E=B \times F\)</span>. We will work in the setting of simplicial sets instead of topological spaces. In this setting, the combinatorics of simplicial sets conspire to make Kan fibrations amenable to straightforward calculation. The key idea, due to <span class="citation" data-cites="BGM">[<strong>BGM?</strong>]</span>, is that of a minimal Kan fibration. We will not worry about the definition of minimality, but the following two results are important:</p>
 <ul>
 <li><p>every Kan fibration fiberwise strong deformation retracts to a minimal Kan fibration</p></li>
 <li><p>every minimal Kan fibration is a fiber bundle.</p></li>
 </ul>
-<p>For details we refer to <span class="citation" data-cites="GJ">(<strong>GJ?</strong>)</span> Proposition 10.3 and Corollary 10.7.</p>
+<p>For details we refer to <span class="citation" data-cites="GJ">[<strong>GJ?</strong>]</span> Proposition 10.3 and Corollary 10.7.</p>
 <div class="theorem">
-<p><strong>Theorem 1</strong> (Twisted Eilenberg-Zilber).  Let <span class="math inline">\(B\)</span> and <span class="math inline">\(F\)</span> be simplicial sets and let <span class="math inline">\(B \times_\tau F\)</span> be a twisted Cartesian product. Then there is an equivalence <span class="math display">\[C_*(B) \otimes_\tau C_*(F) \longrightarrow C_*(B \times_\tau F)\]</span> where the complex on the left is the usual tensor product with a modified differential (the twisted tensor product <span class="citation" data-cites="ebrown">(<strong>ebrown?</strong>)</span>).</p>
+<p><strong>Theorem 1</strong> (Twisted Eilenberg-Zilber).  Let <span class="math inline">\(B\)</span> and <span class="math inline">\(F\)</span> be simplicial sets and let <span class="math inline">\(B \times_\tau F\)</span> be a twisted Cartesian product. Then there is an equivalence <span class="math display">\[C_*(B) \otimes_\tau C_*(F) \longrightarrow C_*(B \times_\tau F)\]</span> where the complex on the left is the usual tensor product with a modified differential (the twisted tensor product <span class="citation" data-cites="ebrown">[<strong>ebrown?</strong>]</span>).</p>
 </div>
 <h1 class="unnumbered" id="bibliography">References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-brown" class="csl-entry" role="doc-biblioentry">
-Brown, Edgar H., Jr. 1959. <span>“Twisted Tensor Products. <span>I</span>.”</span> <em>Ann. Of Math. (2)</em> 69: 223–46. <a href="https://doi.org/10.2307/1970101">https://doi.org/10.2307/1970101</a>.
-</div>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-shih" class="csl-entry" role="doc-biblioentry">
-Shih, Weishu. 1962. <span>“Homologie Des Espaces Fibrés.”</span> <em>Inst. Hautes Études Sci. Publ. Math.</em>, no. 13: 88.
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Shih W (1962) Homologie des espaces fibrés. <em>Inst Hautes Études Sci Publ Math</em> 88.</div>
+</div>
+<div id="ref-brown" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Brown EH Jr. (1959) Twisted tensor products. <span>I</span>. <em>Ann of Math (2)</em> 69: 223–246.</div>
 </div>
 </div>
 <section class="footnotes" role="doc-endnotes">
@@ -79,6 +80,14 @@ Shih, Weishu. 1962. <span>“Homologie Des Espaces Fibrés.”</span> <em>Inst. 
 
     <div id="footer">
     
+    <div id="license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></div>
+
+    <div id="footertext">
+      <a href="https://github.com/nilaykumar/nilaykumar.github.io">powered</a>
+      by <a href="https://metalsmith.io/">Metalsmith</a>
+      and <a href="https://pandoc.org/">pandoc</a>.
+    </div>
     
     </div>
   </body>
