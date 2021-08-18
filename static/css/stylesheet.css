@@ -135,7 +135,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   color: #111;
   line-height: 125%;
-  margin-top: 2em;
+  margin-top: 1em;
   font-weight: normal;
 }
 
@@ -144,27 +144,27 @@ h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 
 h2 {
-  font-size: 2em;
-}
-
-h3 {
   font-size: 1.5em;
 }
 
-h4 {
+h3 {
   font-size: 1.2em;
 }
 
-h5 {
+h4 {
   font-size: 1em;
 }
 
-h6 {
+h5 {
   font-size: 0.9em;
+}
+
+h6 {
+  font-size: 0.8em;
 }
 
 blockquote {
