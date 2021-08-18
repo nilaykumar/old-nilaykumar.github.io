@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>The twisted Eilenberg-Zilber theorem | Nilay Kumar</title>
+
+    
+<link rel="stylesheet" type="text/css" href="../static/css/stylesheet.css">
+
+    <script>
+      MathJax = {
+          loader: {
+              load: ['[custom]/xypic.js'],
+              paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+          },
+          tex: {
+              packages: {'[+]': ['xypic']}
+          }
+      };
+    </script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-chtml-full.js">
+    </script>
+  </head>
+
+  <body>
+
+    <div id="header">
+      
+<div id="banner">
+<a href="../index.html">mathematical odds &amp; ends</a>
+</div>
+
+<div id="nav">
+<a href="../about.html">about</a>
+<a href="../links.html">links</a>
+</div>
+
+    </div>
+
+    <div id="content">
+      
+      <p>Recently I was curious about the origins and initial applications of the homological perturbation lemma (more on that below). As it turned out, it’s a beautiful story about the homology of simplicial fibrations that I had never heard of (due to <span class="citation" data-cites="shih">(Shih 1962)</span> and <span class="citation" data-cites="brown">(Brown 1959)</span>).</p>
+<p><strong>Conventions:</strong> We write <span class="math inline">\(C_*(X)=C_*(X, R)\)</span> for the normalized chain complex of a simplicial set <span class="math inline">\(X\)</span> with coefficients in a ring <span class="math inline">\(R\)</span>.</p>
+<p>For spaces <span class="math inline">\(B\)</span> and <span class="math inline">\(F\)</span>, the Eilenberg-Zilber theorem constucts chain equivalences <span class="math display">\[\begin{xy}
+    \xymatrix{
+      C_*(B\times F) \ar@(ur, ul)[r]^{} &amp; C_*(B) \otimes C_*(F) \ar@(dl, dr)[l]^{}
+    }
+  \end{xy}\]</span> computing the singular chains of the trivial bundle <span class="math inline">\(B \times F\)</span> as a tensor product of the chains on <span class="math inline">\(B\)</span> and the chains on <span class="math inline">\(F\)</span>. The twisted Eilenberg-Zilber theorem is the generalization to an arbitrary bundle <span class="math inline">\(E=B \times F\)</span>. We will work in the setting of simplicial sets instead of topological spaces. In this setting, the combinatorics of simplicial sets conspire to make Kan fibrations amenable to straightforward calculation. The key idea, due to <span class="citation" data-cites="BGM">(<strong>BGM?</strong>)</span>, is that of a minimal Kan fibration. We will not worry about the definition of minimality, but the following two results are important:</p>
+<ul>
+<li><p>every Kan fibration fiberwise strong deformation retracts to a minimal Kan fibration</p></li>
+<li><p>every minimal Kan fibration is a fiber bundle.</p></li>
+</ul>
+<p>For details we refer to <span class="citation" data-cites="GJ">(<strong>GJ?</strong>)</span> Proposition 10.3 and Corollary 10.7.</p>
+<div class="theorem">
+<p><strong>Theorem 1</strong> (Twisted Eilenberg-Zilber).  Let <span class="math inline">\(B\)</span> and <span class="math inline">\(F\)</span> be simplicial sets and let <span class="math inline">\(B \times_\tau F\)</span> be a twisted Cartesian product. Then there is an equivalence <span class="math display">\[C_*(B) \otimes_\tau C_*(F) \longrightarrow C_*(B \times_\tau F)\]</span> where the complex on the left is the usual tensor product with a modified differential (the twisted tensor product <span class="citation" data-cites="ebrown">(<strong>ebrown?</strong>)</span>).</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-brown" class="csl-entry" role="doc-biblioentry">
+Brown, Edgar H., Jr. 1959. <span>“Twisted Tensor Products. <span>I</span>.”</span> <em>Ann. Of Math. (2)</em> 69: 223–46. <a href="https://doi.org/10.2307/1970101">https://doi.org/10.2307/1970101</a>.
+</div>
+<div id="ref-shih" class="csl-entry" role="doc-biblioentry">
+Shih, Weishu. 1962. <span>“Homologie Des Espaces Fibrés.”</span> <em>Inst. Hautes Études Sci. Publ. Math.</em>, no. 13: 88.
+</div>
+</div>
+
+      
+    </div>
+
+    <div id="footer">
+    
+    
+    </div>
+  </body>
+
+</html>
