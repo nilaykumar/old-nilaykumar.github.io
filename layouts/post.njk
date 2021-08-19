@@ -62,7 +62,8 @@
 {% endblock %}
 
 {% block contents %}
-<h1>{{title}}</h1>
+<h1>{{ title }}</h1>
+<em>{{ date | date("MMMM D, YYYY") }}</em>
 {{ contents | safe }}
 {% endblock %}
 
@@ -77,7 +78,7 @@
     <div id="footertext">
       <a href="https://github.com/nilaykumar/nilaykumar.github.io">powered</a>
       by <a href="https://metalsmith.io/">Metalsmith</a>
-      and <a href="https://pandoc.org/">pandoc</a>.
+      and <a href="https://pandoc.org/">pandoc</a>
     </div>
     
     </div>
